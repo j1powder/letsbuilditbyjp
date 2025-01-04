@@ -61,3 +61,44 @@ padding:5rem 0rem;
       opacity: 1;
     }
   }
+
+
+  .container {
+    position: relative;
+    width: 70%;
+    height: 700px;
+    /* background-color: #f0f0f0; */
+    overflow: hidden; /* Ensures content doesn't flow outside */
+    display: block;
+    margin: 0 auto;
+  }
+  
+  .div1 {
+    position: absolute;
+    top: 50px; /* Adjusts vertical position */
+    left: 50px; /* Adjusts horizontal position */
+    padding: 2rem;
+    width: 400px;
+    height: 400px;
+    background-color: var(--lighterBlue);
+    color: white;
+    z-index: 2; /* Ensures this div is on top */
+    animation: slideIn 2s ease-in-out;
+  }
+  
+  .div2 {
+    position: absolute;
+    top: 120px;
+    left: 320px;
+    width: 400px;
+    height: 400px;
+    background-color: #0C6A9E; 
+    z-index: 1; /* This div is below the first */
+    opacity: 0.9; /* Optional: Adds a translucent effect */
+    animation: slideIn 3s ease-in-out;
+  }
+
+  .seoCont {
+    width: 400px;
+    height: auto;
+  }
