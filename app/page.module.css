@@ -2,13 +2,13 @@
 .banner {
 /* background-image: url('../public/banner.jpg'); */
 width: 100%;
-min-height: 500px;
+min-height: 350px;
 max-height: 700px;
 background: linear-gradient(to bottom, 
 rgba(0, 0, 0, 0.1) 65%, /* Slight overlay near the top */
 rgba(255, 255, 255, 0.5) 82%, /* Gradual fade midway */
 rgba(255, 255, 255, 1) 99%), /* Complete fade at the bottom */
-url('../public/banner.jpg') center/cover no-repeat fixed;
+url('../public/mainFrontBanner.jpeg') center/cover no-repeat fixed;
 /* background-repeat: no-repeat;
 background-position: center;
 background-size: cover; */
@@ -16,8 +16,9 @@ padding:5rem 0rem;
   }
 
   .mainTag {
-    color: white;
+    color: var(--lighterBlue);
     text-align: center;
+    font-size: 3rem;
     text-wrap: wrap;
     padding: 2rem 0rem;
     text-shadow:1px 1px 1px black;
@@ -25,11 +26,13 @@ padding:5rem 0rem;
   }
 
 .rotatingImage {
-    width: 300px; /* Adjust size as needed */
+    width: 70%; /* Adjust size as needed */
     height: auto; /* Adjust size as needed */
     animation: slideIn 4s ease-in-out;
     display: block;
     margin: 0 auto;
+    transition: transform 0.1s linear; /* Smoothens the rotation */
+    will-change: transform; /* Optimizes rendering for animations */
     
   }
 
@@ -40,6 +43,9 @@ padding:5rem 0rem;
   .affordable {
     text-align: center;
     animation: slideIn 3s ease-in-out;
+    margin: 0rem 0rem;
+    color: white;
+    text-shadow: 2px 2px 4px black;
   }
 
   @keyframes rotate {
@@ -78,9 +84,10 @@ padding:5rem 0rem;
     top: 50px; /* Adjusts vertical position */
     left: 50px; /* Adjusts horizontal position */
     padding: 2rem;
-    width: 400px;
-    height: 400px;
+    width: 450px;
+    height: auto;
     background-color: var(--lighterBlue);
+    box-shadow: 2px 4px 8px 3px rgba(0, 0, 0, 0.3);
     color: white;
     z-index: 2; /* Ensures this div is on top */
     animation: slideIn 2s ease-in-out;
@@ -90,15 +97,95 @@ padding:5rem 0rem;
     position: absolute;
     top: 120px;
     left: 320px;
-    width: 400px;
-    height: 400px;
+    width: 450px;
+    height: auto;
     background-color: #0C6A9E; 
+    box-shadow: 2px 4px 8px 3px rgba(0, 0, 0, 0.3);
+
     z-index: 1; /* This div is below the first */
     opacity: 0.9; /* Optional: Adds a translucent effect */
     animation: slideIn 3s ease-in-out;
   }
 
   .seoCont {
-    width: 400px;
+    width: 450px;
     height: auto;
+
+  }
+
+
+  .rotatingcontainer {
+    padding: 3rem 0rem;
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; Ensures it's visible */
+    overflow: hidden;
+    /* Optional */
+  }
+  
+  .rotatingimage {
+    width: 200px; /* Adjust size as needed */
+    height: auto;
+    transition: transform 0.1s linear; /* Smoothens the rotation */
+    will-change: transform; /* Optimizes rendering for animations */
+  }
+
+  .middleRow {
+    flex: 1;
+    padding: 3rem 0rem;
+    /* background-image: url('../public/banner.jpeg'); */
+    min-height: 500px;
+    /* background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; */
+    background: 
+    linear-gradient(to bottom, 
+    rgba(0, 0, 0, 0.1) 65%, 
+    rgba(255, 255, 255, 0.5) 82%, 
+    rgba(255, 255, 255, 1) 99%),
+    
+    
+      /* linear-gradient(to top, 
+    rgba(0, 0, 0, 0.1) 60%, 
+    rgba(255, 255, 255, 0.5) 80%, 
+    rgba(255, 255, 255, 1) 99% ), */
+    
+     
+    url('../public/banner.jpg') center/cover no-repeat fixed;
+  /* background-blend-mode: overlay; */
+  }
+
+  .quote {
+    padding: 2rem 0rem;
+    text-align: center;
+    background-color: gray;
+    height: 100%;
+    color: white;
+  }
+
+  .quote img {
+    box-shadow:  2px 2px 3px 3px gray;
+  }
+
+  .contactBtn {
+    display: block;
+    margin: 0 auto;
+    padding: 1.4rem 2rem;
+    background-color: var(--lighterBlue);
+    border: none;
+    border-radius: 30px;
+    box-shadow: 1px 1px 8px 4px gray;;
+  }
+
+  .contactBtn:hover {
+    background-color: white;
+    color: var(--lighterBlue);
+    border: 2px solid var(--lighterBlue);
+  }
+
+  .contactBtn:active{
+    padding:1.3rem 1.8rem;
+    background-color: white;
+    color: var(--lighterBlue);
   }
