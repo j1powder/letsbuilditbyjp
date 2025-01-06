@@ -3,6 +3,7 @@
 import { Fragment, useState, useEffect } from "react";
 import styles from "./page.module.css";
 import Header from "@/components/layout-components/Header";
+import Footer from "@/components/layout-components/Footer";
 import Image from "next/image";
 import computer from '../public/a_computer_being_used.jpeg';
 import Computer from '../public/computer.jpg';
@@ -13,6 +14,8 @@ import gray from '../public/grayComputers.png'
 import seoContent from '../public/seoContent.jpeg'
 import secondBanner from '../public/secondBanner.jpeg'
 import thisComp from '../public/AdobeStock1.jpeg'
+import world from '../public/anotherWorld.png'
+import phoenix from '../public/phoenix.jpeg'
 import { Container, Row, Col } from "react-bootstrap";
 import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
@@ -72,7 +75,7 @@ useEffect(() => {
 
         <Row>
         <Col sm={12} >
-        <Card style={{padding: '1rem', border: 'none'}}>
+        
         <p>At Let’s Build It By JP LLC, 
           we specialize in crafting custom websites and applications 
           that align perfectly with your business goals. 
@@ -85,17 +88,17 @@ useEffect(() => {
           Contact us today to start building your future.
 
         </p>
-      </Card>
+      
         </Col>
         </Row>
         <Row>
         <Col sm={12} className={styles.rotatingcontainer} >
-        <Image style={{ transform: `rotateY(${rotation}deg)` }} className={styles.rotatingImage} src={gray} alt="A computer being used" />
+        <Image style={{ transform: `rotateY(${rotation}deg)` }} className={styles.rotatingImage} src={world} alt="A computer being used" />
         </Col>
       </Row>
       <Row>
         <Col sm={12}>
-        <h1 style={{padding: '3rem 0rem', textAlign:'center'}}>Based In Phoenix Metro!</h1>
+        <h1 style={{padding: '2rem 0rem', textAlign:'center'}}>Based In Phoenix Metro!</h1>
         </Col>
       </Row>
       </div>
@@ -104,7 +107,8 @@ useEffect(() => {
 
       <Row className={styles.middleRow}>
         
-        <h1 style={{textAlign: 'center', color: 'white', textShadow: '2px 2px 2px black'}}>Transforming Ideas into Powerful Websites and Software
+        <h1 style={{textAlign: 'center', color: 'white', textShadow: '2px 2px 2px black'}}>
+          Transforming Ideas into Powerful Websites and Software
         </h1>
         <br/>
         <br/>
@@ -134,7 +138,7 @@ useEffect(() => {
 
       </div>
       <div className={styles.div2}>        
-         <Image className={styles.seoCont}  src={thisComp} alt="A computer being used" /> 
+         <Image className={styles.seoCont}  src={phoenix} alt="A computer being used" /> 
       </div>
     </div>
 
@@ -149,7 +153,8 @@ useEffect(() => {
       <Image style={{width:'400px', height: 'auto', display: 'block', margin: '0 auto', padding: '3rem 0rem'}}  src={Computer} alt="A computer being used" />
       <Row>
         <Col sm={12}>
-        <h1 style={{textAlign: 'center'}}>Transforming Ideas into Powerful Websites and Software
+        <h1 style={{textAlign: 'center'}}>
+          Transforming Ideas into Powerful Websites and Software
         </h1>
         </Col>
       </Row>
@@ -194,7 +199,7 @@ useEffect(() => {
     <br/>
     <br/>
       </Container>
-
+        <Footer />
     </Fragment>
   );
 }

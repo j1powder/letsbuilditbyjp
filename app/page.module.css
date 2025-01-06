@@ -26,7 +26,7 @@ padding:5rem 0rem;
   }
 
 .rotatingImage {
-    width: 70%; /* Adjust size as needed */
+    width: 40%; /* Adjust size as needed */
     height: auto; /* Adjust size as needed */
     animation: slideIn 4s ease-in-out;
     display: block;
@@ -152,7 +152,7 @@ padding:5rem 0rem;
     rgba(255, 255, 255, 1) 99% ), */
     
      
-    url('../public/banner.jpg') center/cover no-repeat fixed;
+    url('../public/AdobeStock1.jpeg') center/cover no-repeat fixed;
   /* background-blend-mode: overlay; */
   }
 
