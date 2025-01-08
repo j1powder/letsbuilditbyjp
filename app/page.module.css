@@ -99,10 +99,12 @@ padding:5rem 0rem;
     top: 120px;
     left: 320px;
     width: 450px;
+    min-height: 300px;
     height: auto;
-    background-color: #0C6A9E; 
+    background-color: var(--darkerBlue); 
     box-shadow: 2px 4px 8px 3px rgba(0, 0, 0, 0.3);
-
+    border: 2px double;
+    border-color:linear-gradient(to right, white, red);
     z-index: 1; /* This div is below the first */
     opacity: 0.9; /* Optional: Adds a translucent effect */
     animation: slideIn 3s ease-in-out;
@@ -160,14 +162,12 @@ padding:5rem 0rem;
   .quote {
     padding: 2rem 0rem;
     text-align: center;
-    background-color: gray;
+    background-color: var(--lighterBlue);
     height: 100%;
     color: white;
   }
 
-  .quote img {
-    box-shadow:  2px 2px 3px 3px gray;
-  }
+ 
 
   .contactBtn {
     display: block;
