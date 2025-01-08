@@ -39,6 +39,7 @@ useEffect(() => {
   };
 }, []);
 
+console.log(rotation)
 
 
   return (
@@ -93,7 +94,18 @@ useEffect(() => {
         </Row>
         <Row>
         <Col sm={12} className={styles.rotatingcontainer} >
-        <Image style={{ transform: `rotateY(${rotation}deg)` }} className={styles.rotatingImage} src={world} alt="A computer being used" />
+        <h2>Websites and Apps for any device</h2>
+        <br/>
+        <br/>
+        {/* <Image style={{ transform: `rotateY(${rotation}deg)` }} className={styles.rotatingImage} src={world} alt="A computer being used" /> */}
+        <Image style={rotation < 115 ? {width: '10%' } : 
+                      rotation >= 115 && rotation < 145 ? { width: "30%"} :
+                      rotation >= 145 && rotation < 185 ? { width: '40%'} :
+                      rotation >= 185 && rotation < 215 ? {width: '50%'} : 
+                      rotation >= 215 && rotation < 245 ? {width: '60%'} :
+                      rotation >= 245 && rotation < 275 ? {width: '70%'} :
+                      {width: '85%'}} className={styles.rotatingImage} src={phoenix} alt="A computer being used" />
+
         </Col>
       </Row>
       <Row>

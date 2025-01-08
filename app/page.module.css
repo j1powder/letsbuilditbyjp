@@ -31,6 +31,7 @@ padding:5rem 0rem;
     animation: slideIn 4s ease-in-out;
     display: block;
     margin: 0 auto;
+    border-radius: 50%;
     transition: transform 0.1s linear; /* Smoothens the rotation */
     will-change: transform; /* Optimizes rendering for animations */
     
