@@ -31,7 +31,7 @@ padding:5rem 0rem;
     animation: slideIn 4s ease-in-out;
     display: block;
     margin: 0 auto;
-    border-radius: 50%;
+    /* border-radius: 50%; */
     transition: transform 0.1s linear; /* Smoothens the rotation */
     will-change: transform; /* Optimizes rendering for animations */
     
@@ -103,8 +103,6 @@ padding:5rem 0rem;
     height: auto;
     background-color: var(--darkerBlue); 
     box-shadow: 2px 4px 8px 3px rgba(0, 0, 0, 0.3);
-    border: 2px double;
-    border-color:linear-gradient(to right, white, red);
     z-index: 1; /* This div is below the first */
     opacity: 0.9; /* Optional: Adds a translucent effect */
     animation: slideIn 3s ease-in-out;
@@ -189,4 +187,12 @@ padding:5rem 0rem;
     padding:1.3rem 1.8rem;
     background-color: white;
     color: var(--lighterBlue);
+  }
+
+  .comp {
+    width:400px; 
+    height: auto;  
+    margin: 0 auto; 
+    padding: 2rem 0rem;
+    animation: slideIn 3s ease-in-out;
   }

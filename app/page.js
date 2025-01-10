@@ -107,7 +107,7 @@ console.log(rotation)
                       rotation >= 185 && rotation < 215 ? {width: '50%'} : 
                       rotation >= 215 && rotation < 245 ? {width: '60%'} :
                       rotation >= 245 && rotation < 275 ? {width: '70%'} :
-                      {width: '85%'}} className={styles.rotatingImage} src={phoenix} alt="A computer being used" />
+                      {width: '85%'}} className={styles.rotatingImage} src={green} alt="A computer being used" />
 
         </Col>
       </Row>
@@ -165,7 +165,7 @@ console.log(rotation)
 
 
       <br/>
-      <Image style={{width:'400px', height: 'auto', display: 'block', margin: '0 auto', padding: '3rem 0rem'}}  src={Computer} alt="A computer being used" />
+      <Image className={styles.comp} style={rotation >= 460 ? {display: 'block'}:{display: 'none'}}  src={Computer} alt="A computer being used" />
       <Row>
         <Col sm={12}>
         <h1 style={{textAlign: 'center'}}>
